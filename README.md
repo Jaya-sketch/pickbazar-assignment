@@ -24,6 +24,36 @@ A grocery e-commerce homepage built with React, replicating the PickBazar refere
 - **Context API** — global cart state management (`CartContext`)
 
 ## 📁 Project Structure
+src/
+
+├── components/
+
+│   ├── Header.jsx          # Top navigation bar
+
+│   ├── Sidebar.jsx         # Category sidebar
+
+│   ├── ProductCard.jsx     # Individual product card with cart controls
+
+│   ├── ProductGrid.jsx     # Fetches & renders all products
+
+│   ├── CartPopup.jsx       # Floating cart summary + checkout trigger
+
+│   ├── HomePage.jsx        # Combines Header, Sidebar, ProductGrid, CartPopup
+
+│   └── CheckoutPage.jsx    # Displays selected products after checkout
+
+├── context/
+
+│   └── CartContext.jsx     # Global cart state (add/remove/update quantity)
+
+├── data/
+
+│   └── products.js         # Mock product data + simulated API fetch function
+
+├── App.jsx                 # Routes setup (/ and /checkout)
+
+└── main.jsx                # App entry point
+
 ## 🚀 Running Locally
 
 1. Clone the repository
