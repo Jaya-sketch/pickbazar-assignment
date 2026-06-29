@@ -1,16 +1,50 @@
-# React + Vite
+# PickBazar - React Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A grocery e-commerce homepage built with React, replicating the PickBazar reference design. Built as a frontend assignment for Stutzen Corporate.
 
-Currently, two official plugins are available:
+## 🔗 Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Live Demo:** https://pickbazar-assignment.vercel.app/ 
+- **GitHub Repo:** https://github.com/Jaya-sketch/pickbazar-assignment
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Product Listing** — fetched from a mock API (simulated with a Promise + delay)
+- **Add to Cart** — products show a "Cart" button which converts into a `− qty +` stepper once added
+- **Floating Cart Summary** — a popup in the bottom-right corner showing total items and price
+- **Checkout Flow** — clicking the cart popup redirects to a `/checkout` page displaying the selected products, quantities, and total, passed via React Router navigation state
+- **Discount Badges** — products on offer show a percentage-off badge
+- **Responsive UI** — built with Tailwind CSS, closely matching the provided reference design
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **React** (Vite)
+- **React Router DOM** — for page navigation (Home → Checkout)
+- **Tailwind CSS** — for styling
+- **Context API** — global cart state management (`CartContext`)
+
+## 📁 Project Structure
+## 🚀 Running Locally
+
+1. Clone the repository
+```bash
+   git clone https://github.com/Jaya-sketch/pickbazar-assignment.git
+   cd pickbazar-assignment
+```
+
+2. Install dependencies
+```bash
+   npm install
+```
+
+3. Start the development server
+```bash
+   npm run dev
+```
+
+4. Open the URL shown in the terminal (typically `http://localhost:5173`)
+
+## 📝 Notes
+
+- Product images are sourced from Unsplash as placeholder/dummy images.
+- Top navigation links (Shops, Offers, Contact, Pages) and sidebar category links are styled to match the reference design but are not functional, as the assignment scope was focused on product listing, cart, and checkout flow.
